@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import Checkbox from "@/components/atoms/Checkbox";
+import React, { forwardRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import ApperIcon from "@/components/ApperIcon";
 import Badge from "@/components/atoms/Badge";
 import Button from "@/components/atoms/Button";
-import ApperIcon from "@/components/ApperIcon";
-import { formatDueDate, getDueDateStatus } from "@/utils/dateHelpers";
+import Checkbox from "@/components/atoms/Checkbox";
 import { cn } from "@/utils/cn";
+import { formatDueDate, getDueDateStatus } from "@/utils/dateHelpers";
 
-const TaskItem = ({ task, onToggle, onEdit, onDelete, className }) => {
+const TaskItem = forwardRef(({ task, onToggle, onEdit, onDelete, className }, ref) => {
   const [isCompleting, setIsCompleting] = useState(false);
   const [showActions, setShowActions] = useState(false);
 
@@ -47,6 +47,7 @@ const TaskItem = ({ task, onToggle, onEdit, onDelete, className }) => {
   if (isCompleting) {
     return (
       <motion.div
+        ref={ref}
         initial={{ opacity: 1, x: 0 }}
         animate={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.3, ease: "easeOut" }}
@@ -72,6 +73,7 @@ const TaskItem = ({ task, onToggle, onEdit, onDelete, className }) => {
 
   return (
     <motion.div
+      ref={ref}
       layout
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -145,6 +147,8 @@ const TaskItem = ({ task, onToggle, onEdit, onDelete, className }) => {
       </div>
     </motion.div>
   );
-};
+});
+
+TaskItem.displayName = 'TaskItem';
 
 export default TaskItem;
