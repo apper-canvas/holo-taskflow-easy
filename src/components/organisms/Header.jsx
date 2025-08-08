@@ -34,8 +34,8 @@ const Header = ({ onSearch, onQuickAdd, onToggleMobileMenu, showSearch = true })
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary-hover rounded-lg flex items-center justify-center">
                 <ApperIcon name="CheckSquare" size={20} className="text-white" />
               </div>
-              <h1 className="text-2xl font-display font-bold bg-gradient-to-r from-primary to-primary-hover bg-clip-text text-transparent">
-TaskFlow 1
+<h1 className="text-2xl font-display font-bold bg-gradient-to-r from-primary to-primary-hover bg-clip-text text-transparent">
+TaskFlow 2
               </h1>
             </div>
           </div>
