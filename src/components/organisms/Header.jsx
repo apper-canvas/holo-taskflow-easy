@@ -35,7 +35,7 @@ const Header = ({ onSearch, onQuickAdd, onToggleMobileMenu, showSearch = true })
                 <ApperIcon name="CheckSquare" size={20} className="text-white" />
               </div>
 <h1 className="text-2xl font-display font-bold bg-gradient-to-r from-primary to-primary-hover bg-clip-text text-transparent">
-TaskFlow 2
+TaskFlow 3
               </h1>
             </div>
           </div>
