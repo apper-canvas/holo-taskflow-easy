@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "name": "My Day",
+    "color": "#5B4FE5",
+    "icon": "Sun",
+    "position": 0
+  },
+  {
+    "Id": 2,
+    "name": "Work",
+    "color": "#3B82F6",
+    "icon": "Briefcase",
+    "position": 1
+  },
+  {
+    "Id": 3,
+    "name": "Personal",
+    "color": "#22C55E",
+    "icon": "User",
+    "position": 2
+  },
+  {
+    "Id": 4,
+    "name": "Projects",
+    "color": "#F59E0B",
+    "icon": "FolderOpen",
+    "position": 3
+  },
+  {
+    "Id": 5,
+    "name": "Shopping",
+    "color": "#EF4444",
+    "icon": "ShoppingCart",
+    "position": 4
+  }
+]
